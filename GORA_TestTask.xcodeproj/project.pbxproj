@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43B9856DBCEAE02BE60BBC9D /* Pods_GORA_TestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9012A737AEADB8387CF2B25 /* Pods_GORA_TestTask.framework */; };
+		D24EC16B285798B200A73102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC16A285798B200A73102 /* AppDelegate.swift */; };
+		D24EC16D285798B200A73102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC16C285798B200A73102 /* SceneDelegate.swift */; };
+		D24EC174285798B300A73102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24EC173285798B300A73102 /* Assets.xcassets */; };
+		D24EC177285798B300A73102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24EC175285798B300A73102 /* LaunchScreen.storyboard */; };
+		D24EC18328579D7E00A73102 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC18228579D7E00A73102 /* NetworkManager.swift */; };
+		D24EC18528579DB800A73102 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC18428579DB800A73102 /* NewsViewController.swift */; };
+		D24EC18A28579EAC00A73102 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC18928579EAC00A73102 /* NewsTableViewCell.swift */; };
+		D24EC18C28579EBF00A73102 /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24EC18B28579EBF00A73102 /* NewTableViewCell.xib */; };
+		D24EC18F28579F0F00A73102 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC18E28579F0F00A73102 /* NewsCollectionViewCell.swift */; };
+		D24EC19128579F6500A73102 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24EC19028579F6500A73102 /* NewCollectionViewCell.xib */; };
+		D24EC19328579F7C00A73102 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC19228579F7C00A73102 /* NewsModel.swift */; };
+		D24EC1972857A03700A73102 /* GradientForCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EC1962857A03700A73102 /* GradientForCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EA806A13ABE0BD0569BF7C7 /* Pods-GORA_TestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GORA_TestTask.debug.xcconfig"; path = "Target Support Files/Pods-GORA_TestTask/Pods-GORA_TestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		50BA2500CDE3114A143FD1A1 /* Pods-GORA_TestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GORA_TestTask.release.xcconfig"; path = "Target Support Files/Pods-GORA_TestTask/Pods-GORA_TestTask.release.xcconfig"; sourceTree = "<group>"; };
+		C9012A737AEADB8387CF2B25 /* Pods_GORA_TestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GORA_TestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D243B88A2857995C00C4C0AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D24EC167285798B200A73102 /* GORA_TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GORA_TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24EC16A285798B200A73102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D24EC16C285798B200A73102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D24EC173285798B300A73102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D24EC176285798B300A73102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D24EC178285798B300A73102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24EC18228579D7E00A73102 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D24EC18428579DB800A73102 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		D24EC18928579EAC00A73102 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		D24EC18B28579EBF00A73102 /* NewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
+		D24EC18E28579F0F00A73102 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		D24EC19028579F6500A73102 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
+		D24EC19228579F7C00A73102 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		D24EC1962857A03700A73102 /* GradientForCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientForCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D24EC164285798B200A73102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B9856DBCEAE02BE60BBC9D /* Pods_GORA_TestTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6475062F4F9C358D82C33DC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EA806A13ABE0BD0569BF7C7 /* Pods-GORA_TestTask.debug.xcconfig */,
+				50BA2500CDE3114A143FD1A1 /* Pods-GORA_TestTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B63F09E3315790A5FC368E74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9012A737AEADB8387CF2B25 /* Pods_GORA_TestTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D24EC15E285798B200A73102 = {
+			isa = PBXGroup;
+			children = (
+				D243B88A2857995C00C4C0AD /* README.md */,
+				D24EC169285798B200A73102 /* GORA_TestTask */,
+				D24EC168285798B200A73102 /* Products */,
+				6475062F4F9C358D82C33DC0 /* Pods */,
+				B63F09E3315790A5FC368E74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D24EC168285798B200A73102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC167285798B200A73102 /* GORA_TestTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D24EC169285798B200A73102 /* GORA_TestTask */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC18128579D4600A73102 /* Services */,
+				D24EC18028579D4200A73102 /* Models */,
+				D24EC17F28579D2700A73102 /* View+Controller */,
+				D24EC178285798B300A73102 /* Info.plist */,
+				D24EC17E28579CDF00A73102 /* App */,
+			);
+			path = GORA_TestTask;
+			sourceTree = "<group>";
+		};
+		D24EC17E28579CDF00A73102 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC173285798B300A73102 /* Assets.xcassets */,
+				D24EC16C285798B200A73102 /* SceneDelegate.swift */,
+				D24EC16A285798B200A73102 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D24EC17F28579D2700A73102 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC175285798B300A73102 /* LaunchScreen.storyboard */,
+				D24EC18628579E0400A73102 /* Screen */,
+				D24EC1962857A03700A73102 /* GradientForCell.swift */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		D24EC18028579D4200A73102 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC19228579F7C00A73102 /* NewsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D24EC18128579D4600A73102 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC18228579D7E00A73102 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D24EC18628579E0400A73102 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC18428579DB800A73102 /* NewsViewController.swift */,
+				D24EC18728579E2500A73102 /* Cells */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		D24EC18728579E2500A73102 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC18828579E3100A73102 /* TableView */,
+				D24EC18D28579ED100A73102 /* CollectionView */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D24EC18828579E3100A73102 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC18928579EAC00A73102 /* NewsTableViewCell.swift */,
+				D24EC18B28579EBF00A73102 /* NewTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		D24EC18D28579ED100A73102 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC18E28579F0F00A73102 /* NewsCollectionViewCell.swift */,
+				D24EC19028579F6500A73102 /* NewCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D24EC166285798B200A73102 /* GORA_TestTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24EC17B285798B300A73102 /* Build configuration list for PBXNativeTarget "GORA_TestTask" */;
+			buildPhases = (
+				F63601C2B68F585D832C04CB /* [CP] Check Pods Manifest.lock */,
+				D24EC163285798B200A73102 /* Sources */,
+				D24EC164285798B200A73102 /* Frameworks */,
+				D24EC165285798B200A73102 /* Resources */,
+				7CB8E99EECEB50587E8B4FD0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GORA_TestTask;
+			productName = GORA_TestTask;
+			productReference = D24EC167285798B200A73102 /* GORA_TestTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D24EC15F285798B200A73102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D24EC166285798B200A73102 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = D24EC162285798B200A73102 /* Build configuration list for PBXProject "GORA_TestTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D24EC15E285798B200A73102;
+			productRefGroup = D24EC168285798B200A73102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D24EC166285798B200A73102 /* GORA_TestTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D24EC165285798B200A73102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24EC177285798B300A73102 /* LaunchScreen.storyboard in Resources */,
+				D24EC174285798B300A73102 /* Assets.xcassets in Resources */,
+				D24EC18C28579EBF00A73102 /* NewTableViewCell.xib in Resources */,
+				D24EC19128579F6500A73102 /* NewCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CB8E99EECEB50587E8B4FD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GORA_TestTask/Pods-GORA_TestTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GORA_TestTask/Pods-GORA_TestTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GORA_TestTask/Pods-GORA_TestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63601C2B68F585D832C04CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GORA_TestTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D24EC163285798B200A73102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24EC19328579F7C00A73102 /* NewsModel.swift in Sources */,
+				D24EC18A28579EAC00A73102 /* NewsTableViewCell.swift in Sources */,
+				D24EC18F28579F0F00A73102 /* NewsCollectionViewCell.swift in Sources */,
+				D24EC1972857A03700A73102 /* GradientForCell.swift in Sources */,
+				D24EC18328579D7E00A73102 /* NetworkManager.swift in Sources */,
+				D24EC16B285798B200A73102 /* AppDelegate.swift in Sources */,
+				D24EC16D285798B200A73102 /* SceneDelegate.swift in Sources */,
+				D24EC18528579DB800A73102 /* NewsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D24EC175285798B300A73102 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D24EC176285798B300A73102 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D24EC179285798B300A73102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D24EC17A285798B300A73102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D24EC17C285798B300A73102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA806A13ABE0BD0569BF7C7 /* Pods-GORA_TestTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GORA_TestTask/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GORA;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiko.GORA-TestTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D24EC17D285798B300A73102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BA2500CDE3114A143FD1A1 /* Pods-GORA_TestTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ8B9FFXUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GORA_TestTask/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GORA;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiko.GORA-TestTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D24EC162285798B200A73102 /* Build configuration list for PBXProject "GORA_TestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24EC179285798B300A73102 /* Debug */,
+				D24EC17A285798B300A73102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24EC17B285798B300A73102 /* Build configuration list for PBXNativeTarget "GORA_TestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24EC17C285798B300A73102 /* Debug */,
+				D24EC17D285798B300A73102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D24EC15F285798B200A73102 /* Project object */;
+}
